@@ -26,47 +26,47 @@ const Products = () => {
                 <td>
                   <img style={{ width: "80px" }} src={Laptop} />
                 </td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
+                <td>Laptop</td>
+                <td>$200</td>
+                <td>5</td>
               </tr>
               <tr>
-                <td>1</td>
+                <td>2</td>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>@mdo</td>
               </tr>
               <tr>
-                <td>1</td>
+                <td>3</td>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>@mdo</td>
               </tr>
               <tr>
-                <td>1</td>
+                <td>4</td>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>@mdo</td>
               </tr>
               <tr>
-                <td>1</td>
+                <td>5</td>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>@mdo</td>
               </tr>
               <tr>
-                <td>1</td>
+                <td>6</td>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>@mdo</td>
               </tr>
               <tr>
-                <td>1</td>
+                <td>7</td>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>

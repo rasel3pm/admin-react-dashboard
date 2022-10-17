@@ -8,6 +8,7 @@ import EarningReview from "../../components/earning-review/EarningReview";
 import CustomerReview from "../../components/customer-review/CustomerReview";
 import GoalChart from "../../components/goal/GoalChart";
 import OrderStatus from "../../components/order-status/OrderStatus";
+import TopSeller from "../../components/top-seller/TopSeller";
 const Home = () => {
   return (
     <div className="main">
@@ -36,9 +37,15 @@ const Home = () => {
         {/* top seller website visitor task last area */}
 
         <div className="topSeller_website_task">
-          <div className="topSeller">topSeller</div>
-          <div className="website">website</div>
-          <div className="task">task</div>
+          <div className="topSeller">
+            <TopSeller />
+          </div>
+          <div className="website">
+            <TopSeller />
+          </div>
+          <div className="task">
+            <TopSeller />
+          </div>
         </div>
       </div>
     </div>
