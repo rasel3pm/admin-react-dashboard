@@ -1,0 +1,27 @@
+.home_content{
+    background-color: black;
+    padding: 30px;
+}
+
+.ear_customer{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 10px;
+}
+
+.goal_order_chart{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 10px;
+}
+
+.goal_complite,.order_status{
+    background-color: #18191a;
+}
+
+
+.topSeller_website_task{
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    gap: 10px;
+}

@@ -1,0 +1,38 @@
+.EarningReview{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.item{
+    padding-top: 25px;
+    text-align: center;
+    background-color: var(--bg-clr);
+    border-radius: 10px;
+}
+
+.earning_icon i{
+    font-size: 35px;
+    padding: 10px;
+    background-color: #1e90ff;
+    border-radius: 50%;
+    color: white;
+}
+.earning_rate span{
+    color: white;
+    font-size: 19px;
+}
+.earning_title p{
+    color: var(--para-clr);
+    font-size: 14px;
+}
+
+.two i{
+    background-color: #ff6b81;
+}
+.theree i{
+    background-color: #ffa502;
+}
+.four i{
+    background-color: #2ed573;
+}

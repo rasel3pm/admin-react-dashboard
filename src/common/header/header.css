@@ -1,0 +1,20 @@
+.icon{
+    color: white;
+    background-color: rgb(59, 59, 59);
+    padding: 7px;
+    border-radius: 10px;
+    margin-right: 7px;
+}
+
+.user-name{
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.user-area{
+    display: flex;
+    align-items: center;
+}
+.navberPro{
+    background-color: var(--bg-clr);
+}

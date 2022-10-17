@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./common/header/Header";
+import Home from "./page/home/Home";
+import OrdeList from "./page/orderList/OrdeList";
+import AllChart from "./page/chart/AllChart";
+import AddItems from "./page/addItems/AddItems";
+import Users from "./page/Users/Users";
+import Products from "./page/products/Products";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/order" element={<OrdeList />} />
+          <Route path="/charts" element={<AllChart />} />
+          <Route path="/addItems" element={<AddItems />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/products" element={<Products />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

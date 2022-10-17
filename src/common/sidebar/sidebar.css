@@ -1,0 +1,58 @@
+.sidebar{
+    height: 95vh;
+    background-color: var(--bg-clr);
+}
+.sidebar ul li{
+    margin-top: 10px;
+    padding-left: 50px;
+    color: var(--icon-clr) !important
+}
+.sidebar ul li i{
+    padding-right: 6px;
+
+}
+.sidebar ul{
+padding: 0;
+}
+
+.list-items{
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+.list-items:hover{
+    background-color:var(--hover-clr);
+}
+
+.admin_avater{
+    text-align: center;
+    color: var(--icon-clr);
+}
+
+.picture img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--icon-clr);
+}
+
+.isactive{
+    background-color: #ac7716;
+    padding: 3px 15px;
+    font-size: 18px;
+    transition: all 0.5s;
+    color: rgb(210, 221, 228);
+    border-radius: 5px;
+}
+
+.notactive {
+    color: rgb(25, 218, 34);
+}
+
+.navtext{
+    color: var(--icon-clr);
+}
+.navtext:hover{
+    color: var(--heading-clr);
+}
