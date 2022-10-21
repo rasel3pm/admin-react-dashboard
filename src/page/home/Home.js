@@ -2,7 +2,6 @@ import React from "react";
 
 import Sidebar from "../../common/sidebar/Sidebar";
 import "remixicon/fonts/remixicon.css";
-import { Container } from "react-bootstrap";
 import "./home.css";
 import EarningReview from "../../components/earning-review/EarningReview";
 import CustomerReview from "../../components/customer-review/CustomerReview";

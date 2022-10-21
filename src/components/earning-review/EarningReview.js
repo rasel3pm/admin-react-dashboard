@@ -3,7 +3,7 @@ import "./earning-review.css";
 const EarningReview = () => {
   return (
     <div className="EarningReview ">
-      <div className="item">
+      <div className="item zero">
         <div className="earning_icon">
           <i class="ri-money-dollar-circle-line"></i>
         </div>

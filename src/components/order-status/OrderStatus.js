@@ -26,7 +26,7 @@ import {
   Tooltip,
   SubTitle,
 } from "chart.js";
-import { Bar, Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 
 ChartJs.register(
   ArcElement,
@@ -82,39 +82,36 @@ const OrderStatus = () => {
         {
           label: "Sels",
           data: [100, 70, 80, 88, 100, 40, 80, 55, 100, 40, 80, 55],
-          borderColor: "rgb(255, 99, 150)",
-          backgroundColor: "rgba(255, 99, 132, 0.4)",
+          backgroundColor: [
+            "rgba(188, 33, 154, 0.8)",
+            "rgba(245, 14, 228, 0.8)",
+            "rgba(245, 137, 14, 0.8)",
+            "rgba(153, 236, 32, 0.8)",
+            "rgba(32, 236, 51, 0.8)",
+            "rgba(32, 42, 236, 0.8)",
+            "rgba(32, 236, 229, 0.8)",
+          ],
+          borderColor: [
+            "rgba(255, 99, 132, 1)",
+            "rgba(54, 162, 235, 1)",
+            "rgba(255, 206, 86, 1)",
+            "rgba(75, 192, 192, 1)",
+            "rgba(153, 102, 255, 1)",
+            "rgba(255, 159, 64, 1)",
+          ],
         },
       ],
     });
 
     setChartOption({
-      //   responsive: true,
-      //   plugins: {
-      //     legend: {
-      //       position: "top",
-      //     },
-      //     title: {
-      //       display: true,
-      //       text: "Line Chart",
-      //     },
-      //   },
-      type: "line",
-      options: {
-        plugins: {
-          filler: {
-            propagate: false,
-          },
-          title: {
-            display: true,
-            text: (ctx) =>
-              "drawTime: " + ctx.chart.options.plugins.filler.drawTime,
-          },
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "top",
         },
-        pointBackgroundColor: "#fff",
-        radius: 10,
-        interaction: {
-          intersect: false,
+        title: {
+          display: true,
+          text: "Line Chart",
         },
       },
     });
@@ -125,11 +122,10 @@ const OrderStatus = () => {
       <div
         style={{
           width: "100%",
-          backgroundColor: "#18191a",
           padding: "10px",
         }}
       >
-        <Bar data={dataList} />
+        <Bar chartOption={chartOption} data={dataList} />
       </div>
     </div>
   );

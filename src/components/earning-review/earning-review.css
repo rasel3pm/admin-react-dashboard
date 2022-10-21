@@ -9,7 +9,15 @@
     text-align: center;
     background-color: var(--bg-clr);
     border-radius: 10px;
+    transition: 0.5s;
 }
+.zero:hover{
+    background-color: #1e90ff;
+}
+.one:hover{
+    background-color: #1e90ff;
+}
+
 
 .earning_icon i{
     font-size: 35px;

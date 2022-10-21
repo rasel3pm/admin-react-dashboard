@@ -1,13 +1,13 @@
 import React from "react";
 import Sidebar from "../../common/sidebar/Sidebar";
 
-const OrdeList = () => {
+const AllReview = () => {
   return (
-    <div className="main mt-3 text-white">
+    <div>
       <Sidebar />
-      <h3>Active Order</h3>
+      AllReview
     </div>
   );
 };
 
-export default OrdeList;
+export default AllReview;

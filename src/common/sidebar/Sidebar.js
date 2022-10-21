@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./sidebar.css";
+import "./sidebar.css";
 import { NavLink } from "react-router-dom";
 import avatar from "../../asset/picture/im.jpg";
 

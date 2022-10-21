@@ -9,6 +9,7 @@ import AllChart from "./page/chart/AllChart";
 import AddItems from "./page/addItems/AddItems";
 import Users from "./page/Users/Users";
 import Products from "./page/products/Products";
+import AllReview from "./page/All-Review/AllReview";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/addItems" element={<AddItems />} />
           <Route path="/users" element={<Users />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/all-review" element={<AllReview />} />
         </Routes>
       </BrowserRouter>
     </>

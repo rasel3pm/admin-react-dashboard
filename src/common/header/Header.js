@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar, Container, Nav, Form, Button } from "react-bootstrap";
+import { Navbar, Container, Nav, Form } from "react-bootstrap";
 import "remixicon/fonts/remixicon.css";
 import "./header.css";
 const Header = () => {
@@ -15,16 +15,20 @@ const Header = () => {
               <Form>
                 <Form.Control
                   type="search"
-                  placeholder="Search"
-                  className="me-1 rounded-pill"
+                  placeholder="Search here"
+                  className="me-1 rounded-pill bg-transparent  text-white"
                   aria-label="Search"
                 />
               </Form>
             </Nav>
 
-            <Nav>
+            <Nav className="me-auto">
               <Form>
-                <Form.Control input type="date" />
+                <Form.Control
+                  input
+                  type="date"
+                  className="bg-transparent text-center text-white"
+                />
               </Form>
             </Nav>
             <Nav>

@@ -1,7 +1,6 @@
 import React from "react";
 
 import Sidebar from "../../common/sidebar/Sidebar";
-import GoalChart from "../../components/goal/GoalChart";
 import OrderStatus from "../../components/order-status/OrderStatus";
 import "./allcart.css";
 const AllChart = () => {
