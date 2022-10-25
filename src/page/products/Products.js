@@ -3,13 +3,13 @@ import SiProduct from "./SiProduct";
 import Sidebar from "../../common/sidebar/Sidebar";
 import axios from "axios";
 import { Table } from "react-bootstrap";
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
 
 const Products = () => {
   const [info, setInfo] = useState([]);
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/todos/")
+      .get("https://jsonplaceholder.typicode.com/photos")
       .then((tood) => setInfo(tood.data));
   }, []);
 
@@ -18,7 +18,7 @@ const Products = () => {
       <div className="main">
         <Sidebar />
         <section>
-          {info.slice(0, 5).map((todo) => (
+          {info.slice(0, 10).map((todo) => (
             <Table striped bordered hover variant="dark">
               <thead>
                 <tr>
@@ -31,9 +31,11 @@ const Products = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>{uuidv4()}</td>
+                  <td>{todo.id}</td>
+                  <td>
+                    <img src={todo.thumbnailUrl} />
+                  </td>
                   <td>{todo.title}</td>
-                  <td>Laptop</td>
                   <td>$200</td>
                   <td>5</td>
                 </tr>

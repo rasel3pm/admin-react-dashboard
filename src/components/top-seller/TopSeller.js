@@ -4,24 +4,33 @@ import { Table } from "react-bootstrap";
 const TopSeller = () => {
   return (
     <div>
-      <Table hover variant="dark">
+      <Table hover className="topseller_table text-white">
         <thead>
           <tr>
-            <th>Profile</th>
-            <th>Country</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
             <th>Product</th>
+            <th>Product id</th>
+            <th>status</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
+            <td>Dow</td>
+            <td>abc@gmail.com</td>
+            <td>74754765</td>
+            <th>Product</th>
+            <th>755674tt7t7</th>
+            <th>pending</th>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
+            <td>emus</td>
+            <td>abc@gmail.com</td>
+            <td>74754765</td>
+            <th>Product</th>
+            <th>jkjdfi58746</th>
+            <th>Success</th>
           </tr>
         </tbody>
       </Table>

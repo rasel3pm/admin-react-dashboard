@@ -25,3 +25,8 @@
 body{
     background-color: var(--bg-clr) !important;
 }
+
+.topseller_table{
+    background-color: var(--bg-clr);
+    color: var(--para-clr);
+}

@@ -39,12 +39,6 @@ const Home = () => {
           <div className="topSeller">
             <TopSeller />
           </div>
-          <div className="website">
-            <TopSeller />
-          </div>
-          <div className="task">
-            <TopSeller />
-          </div>
         </div>
       </div>
     </div>
